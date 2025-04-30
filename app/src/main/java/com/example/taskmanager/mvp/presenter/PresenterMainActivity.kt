@@ -9,7 +9,10 @@ class PresenterMainActivity(
     private val model: ModelMainActivity
 ) : BaseLifeCycle {
     override fun onCreate() {
-
+        setNewTask()
     }
 
+    private fun setNewTask(){
+        view.showDialog()
+    }
 }
